@@ -1,5 +1,5 @@
-import pandas as pd
-import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy import interpolate
+pandas
+streamlit
+numpy
+matplotlib.pyplot
+scipy
