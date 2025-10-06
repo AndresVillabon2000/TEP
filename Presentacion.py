@@ -72,3 +72,10 @@ elif usuarios >= X[4]:
     st.write('El porcetaje de partiticiación de Epoch Times es: 95%')
     st.write(f'El total de ingresos para Epoch Times es {int(usuarios/100*5*0.95)}') 
         
+
+
+df1=pd.read_excel('Flujo de caja. Epoch Academyxlsx.xlsx')
+st.line_chart(data=df1,x='Mes', y='Visualizaciones', color=['#36CCD3']) 
+st.line_chart(data=df1,x='Mes', y='Conversión Suscriptores', color=['#36CCD3']) 
+st.line_chart(data=df1,x='Mes', y='Dólares', color=['#36CCD3']) 
+
