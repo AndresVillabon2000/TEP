@@ -30,7 +30,7 @@ plt.xlabel('Número de suscriptores')
 plt.ylabel('Porcentaje de Epoch Times')
 x=[103200,825600]
 y=[80,95]
-plt.plot(x,y)
+plt.plot(x,y, color='#093773')
 #plt.xticks([3225,25800,103200,825600], rotation=45)
 plt.annotate('(3225, 20)', xy=(7225, 20))
 plt.annotate('(8600, 40)', xy=(12000, 40))
