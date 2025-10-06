@@ -9,13 +9,13 @@ from scipy import interpolate
 
 # Título de  la página
 st.set_page_config(layout="centered",
-    page_title="Plan Comisiones Epoch Acadamy",
+    page_title="Plan Comisiones Epoch Academic",
     page_icon="🕰️"
 )
 t1, t2 = st.columns([0.3,0.7]) 
 t1.image('CrezcamosYa (1000 x 500 px).png')
 t2.title(":blue[Etapas del proyecto]")
-t2.markdown("Equipo Epoch Academy")
+t2.markdown("Equipo Epoch Academic")
 
 
 X=np.array([3225,8600,25800,103200,825600])
@@ -41,6 +41,8 @@ plt.annotate('(825600, 95)', xy=(750000, 95))
 st.pyplot(fig)
 
 df=pd.DataFrame({'suscrip':xnew, 'PET': ynew})
+new_row_data = {'suscrip': 825600, 'PET': 95}
+df.loc[len(df)] = new_row_data
 st.line_chart(data=df, x='suscrip', y='PET', x_label='Número de suscripciones', 
               y_label='Porcentaje de Epoch Times',
               color=['#36CCD3'])
