@@ -18,10 +18,10 @@ t2.title(":blue[Etapas del proyecto]")
 t2.markdown("Equipo Epoch Academy")
 
 
-X=np.array([3225,8600,25800,103200,825600 ])
+X=np.array([3225,8600,25800,103200,825600])
 Y=np.array([20, 40, 60, 80, 95])
 tck = interpolate.splrep(X, Y) 
-xnew = np.linspace(3000, 850000, 1000)
+xnew = np.linspace(3000, 113200, 1000)
 ynew = interpolate.splev(xnew, tck)
 p1= interpolate.splev(5, tck)
 fig, axs = plt.subplots(figsize=(16, 8))
