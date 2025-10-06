@@ -21,15 +21,17 @@ t2.markdown("Equipo Epoch Academy")
 X=np.array([3225,8600,25800,103200,825600])
 Y=np.array([20, 40, 60, 80, 95])
 tck = interpolate.splrep(X, Y) 
-xnew = np.linspace(3000, 113200, 1000)
+xnew = np.linspace(3225, 103200, 1000)
 ynew = interpolate.splev(xnew, tck)
 p1= interpolate.splev(5, tck)
 fig, axs = plt.subplots(figsize=(16, 8))
 plt.plot(X, Y, 'o', xnew, ynew, color='#093773')
 plt.xlabel('Número de suscriptores')
 plt.ylabel('Porcentaje de Epoch Times')
-
-plt.xticks([3225,25800,103200,825600], rotation=45)
+x=[103200,825600]
+y=[80,95]
+plt.plot(x,y)
+#plt.xticks([3225,25800,103200,825600], rotation=45)
 plt.annotate('(3225, 20)', xy=(7225, 20))
 plt.annotate('(8600, 40)', xy=(12000, 40))
 plt.annotate('(25800, 60)', xy=(34800, 60))
@@ -61,8 +63,8 @@ elif usuarios < X[3] and X[2]<= usuarios:
     st.write(f'El total de ingresos para Epoch Times es {int(usuarios/100*5*PET)}') 
 elif usuarios < X[4] and X[3]<= usuarios:
     st.write(f"El proyecto está en la etapa IV")
-    st.write(f'El porcetaje de partiticiación de Epoch Times es: {int(PET)}%')
-    st.write(f'El total de ingresos para Epoch Times es {int(usuarios*5/100*PET)}') 
+    st.write(f'El porcetaje de partiticiación de Epoch Times es: 80%')
+    st.write(f'El total de ingresos para Epoch Times es {int(usuarios*5*0.8)}') 
 elif usuarios >= X[4]:
     st.write('El proyecto está en la etapa V')
     st.write('El porcetaje de partiticiación de Epoch Times es: 95%')
