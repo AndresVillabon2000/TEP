@@ -1,3 +1,7 @@
+pip install openpyxl
+pip install xlrd
+
+
 import pandas as pd
 import streamlit as st
 import numpy as np
