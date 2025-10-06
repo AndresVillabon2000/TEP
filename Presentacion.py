@@ -74,7 +74,7 @@ elif usuarios >= X[4]:
         
 
 
-df1=pd.read_excel('Flujo de caja Epoch Academyxlsx.xlsx')
+df1=pd.read_excel('/workspaces/TEP/Flujo de caja Epoch Academyxlsx.xlsx')
 st.line_chart(data=df1,x='Mes', y='Visualizaciones', color=['#36CCD3']) 
 st.line_chart(data=df1,x='Mes', y='Conversión Suscriptores', color=['#36CCD3']) 
 st.line_chart(data=df1,x='Mes', y='Dólares', color=['#36CCD3']) 
