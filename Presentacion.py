@@ -70,7 +70,7 @@ elif usuarios < X[4] and X[3]<= usuarios:
 elif usuarios >= X[4]:
     st.write('El proyecto está en la etapa V')
     st.write('El porcetaje de partiticiación de Epoch Times es: 95%')
-    st.write(f'El total de ingresos para Epoch Times es {int(usuarios/100*5*0.95)}') 
+    st.write(f'El total de ingresos para Epoch Times es {int(usuarios*5*0.95)}') 
         
 
 
